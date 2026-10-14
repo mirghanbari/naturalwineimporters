@@ -8,6 +8,6 @@ Interim one-page "coming soon" site, served by a Cloudflare Worker with static a
 - `NWI Logo_JPG.jpg`: original logo (296×296); `public/logo.png` is a transparent version
 
 Local preview: `npx wrangler dev`
-Deploy: `npx wrangler deploy` (or push to `main` if Workers Builds is connected)
+Deploy: push to `main` (Workers Builds deploys automatically). Manual fallback: `npx wrangler deploy`
 
 Fonts: Fraunces and Inter, self-hosted under the SIL Open Font License (see `public/fonts/`).
