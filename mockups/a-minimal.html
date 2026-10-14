@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Natural Wine Importers</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root { --ink: #1d1d1b; --muted: #6b6a66; --bg: #fff; --accent: #e0b923; }
+  * { box-sizing: border-box; margin: 0; }
+  html, body { height: 100%; }
+  body {
+    background: var(--bg); color: var(--ink);
+    font: 400 16px/1.6 Inter, system-ui, sans-serif;
+    display: grid; grid-template-rows: 1fr auto; min-height: 100vh;
+  }
+  main {
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    text-align: center; padding: 6vh 24px;
+  }
+  .logo { width: min(240px, 60vw); }
+  h1 {
+    font: 500 clamp(2rem, 5vw, 3.25rem)/1.1 "Cormorant Garamond", serif;
+    letter-spacing: .01em; margin-top: 1.5rem;
+  }
+  .tagline {
+    font: italic 400 clamp(1.15rem, 2.4vw, 1.4rem)/1.4 "Cormorant Garamond", serif;
+    color: var(--muted); margin-top: .5rem;
+  }
+  .rule { width: 48px; height: 2px; background: var(--accent); margin: 2rem auto; border: 0; }
+  p.note { max-width: 34ch; color: var(--muted); }
+  a.ig {
+    display: inline-block; margin-top: 1.75rem; padding: .75rem 1.5rem;
+    border: 1px solid var(--ink); color: var(--ink); text-decoration: none;
+    font-size: .8rem; letter-spacing: .14em; text-transform: uppercase;
+    transition: background .2s, color .2s;
+  }
+  a.ig:hover { background: var(--ink); color: #fff; }
+  footer { text-align: center; font-size: .75rem; color: var(--muted); padding: 24px; }
+</style>
+</head>
+<body>
+<main>
+  <img class="logo" src="logo.png" alt="Watercolor drawing of a wine bottle above a bunch of grapes">
+  <h1>Natural Wine Importers</h1>
+  <p class="tagline">Bringing fermented grape juice to the left side of the USA.</p>
+  <hr class="rule">
+  <p class="note">We're out sourcing wine. In the meantime, follow along with what we're drinking.</p>
+  <a class="ig" href="https://www.instagram.com/naturalwineimporters/">@naturalwineimporters</a>
+</main>
+<footer>© 2026 Natural Wine Importers Inc.</footer>
+</body>
+</html>
